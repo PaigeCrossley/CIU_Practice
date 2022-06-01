@@ -61,6 +61,15 @@ public:
             delete [] arrCopy;
         }
     }
+     
+    // function that replaces the value at the given index with the given value, does not need resizing and does not affect current, will not make changes if the index is >= current
+    void replace_(int index, T data) {
+        if(index < current) {
+            arr[index] = data;
+        }else{
+            nullptr;
+        }
+    }
 
     // function to extract element at any index, returns -1 if out of range
     T get(int index) 
