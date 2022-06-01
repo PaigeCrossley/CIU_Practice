@@ -25,6 +25,17 @@ int main()
     vec.print();
     cout << "New capacity check: " << vec.getCapacity() << endl;
     cout << "New size check: " << vec.size_() << endl << endl;
+    
+    cout << "I want to replace 3 with 8" << endl;
+    vec.replace_(2,8);
+    vec.print();
+    cout << "Alright, put it back" << endl;
+    vec.replace_(2,3);
+    vec.print();
+    cout << "What if I try replacing an element that doesn't exist, like at index 8" << endl;
+    vec.replace_(8,4);
+    vec.print();
+    cout << "No changes were made" << endl << endl;
 
     cout << "Show me the element at index 2: " << vec.get(2) << endl;
     cout << "Now me the element at index 8: " << vec.get(8) << " (There is no index 8)" << endl << endl;
