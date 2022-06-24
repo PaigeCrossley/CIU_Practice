@@ -18,14 +18,14 @@ int main()
     cout << "Now is the queue empty?" << endl << Q.empty_() << " (1 = True, 0 = False)" << endl << endl;
 
     cout << "Time to dequeue them" << endl << endl;
-    Q.dequeue();
-    Q.dequeue();
-    Q.dequeue();
-    Q.dequeue();
-    Q.dequeue();
+    cout<< Q.dequeue() << endl;
+    cout<< Q.dequeue() << endl;
+    cout<< Q.dequeue() << endl;
+    cout<< Q.dequeue() << endl;
+    cout<< Q.dequeue() << endl;
     cout << endl << "Is the queue empty?" << endl << Q.empty_() << " (1 = True, 0 = False)" << endl << endl;
 
     cout << "What happens if I dequeue an empty list?" << endl;
-    Q.dequeue();
-    cout << "Nothing" << endl;
+    cout<< Q.dequeue() << endl;
+    cout << "Returns -1 as warning that there is nothing to dequeue" << endl;
 }
