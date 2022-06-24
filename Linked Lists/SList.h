@@ -8,7 +8,7 @@ class SList
 {
     struct Node // creating a structure for the node values and pointers
     {
-        int value;
+        T value;
         Node* next;
     };
 
