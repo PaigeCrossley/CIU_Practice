@@ -48,20 +48,22 @@ class QLL
             }
         };
 
-        void dequeue() // remove values from the front of the list
+        T dequeue() // remove values from the front of the list, returns -1 if empty
         {
             if(empty_() == 1) {
-                nullptr;
+                return -1;
             }else {
                 Node* trvl = head;
 
-                cout << trvl->value << endl;
+                T data = trvl->value;
 
                 head = head->next;
 
                 delete trvl;
 
                 len--;
+
+                return data;
             }
         };
 
